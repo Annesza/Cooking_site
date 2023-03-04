@@ -1,0 +1,44 @@
+.main {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 100px 0;
+    @include flexRow;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.description {
+    width: 600px;
+    height: 400px;
+    padding: 70px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    &__title {
+        font-weight: 700;
+        font-size: 50px;
+    }
+    &__text {
+        font-size: 30px;
+        text-align: justify;
+    }
+    &__btn {
+        width: 250px;
+        height: 60px;
+        font-size: 20px;
+        border: none;
+        border-radius: 3px;
+        color: white;
+        background-color: #479148;
+        cursor: pointer;
+    }
+}
+
+.image {
+    width: 700px;
+    height: 500px;
+    padding: 0 70px;
+    &__photo {
+        width: 100%;
+    }
+}

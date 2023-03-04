@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Ubuntu:wght@300;400&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+.nav {
+    @include flexRow;
+    justify-content: space-between;
+    &__logo {
+        border-radius: 0 0 50px;
+        background-color: $bgclr;
+        &-bundle {
+            width: 70px;
+            height: 70px;
+            margin: 10px 20px;
+        }
+    }
+}
+
+.list {
+    margin: 0 40px;
+    @include flexRow;
+    gap: 30px;
+    &__item {
+        padding: 30px 0;
+        display: block;
+    }
+    &__link {
+        font-size: 20px;
+        padding: 10px 20px;
+        color: $clr-text;
+        text-decoration: none;
+        &:hover {
+            color: white;
+            background-color: $bgclr;
+        }
+    }
+    &__icon {
+        width: 30px;
+        height: 30px;
+    }
+}
